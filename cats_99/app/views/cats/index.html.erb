@@ -1,0 +1,7 @@
+<h1> All cats :3 </h1>
+
+<% @cats.each do |cat|%>
+<%= cat.name + " | " + "#{cat.age} years old"%>
+<a href="<%=cat_url(cat) %>">show cat</a>
+<br/>
+<% end %>
